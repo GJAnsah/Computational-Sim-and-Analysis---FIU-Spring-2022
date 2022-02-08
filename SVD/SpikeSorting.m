@@ -93,7 +93,8 @@ xlabel('time(s)')
 ylabel('voltage(uV)')
 title('Plots of all 300 records')
 subtitle('after Singular Value Decomposition with 2 PC')
-%%
+
+%% Results
 % Visualizing Clusters
 for n=1:4
     SpikeData_0=SpikeData_new{n};
