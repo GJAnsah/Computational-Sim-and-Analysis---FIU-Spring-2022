@@ -1,5 +1,14 @@
 %% BME6717 Dataset 2 Spike Sorting with SVD
 
+% In NeuronData.mat are 300 records of recordings from an electrode implanted in motor cortex of an 
+% animal. The data have been aligned in time using a thresholding algorithm and the records have been 
+% trimmed to include only a 48 sample time window around the detected peaks (action potentials) from 
+% the time series record. This electrode records noise and action potentials from many different neurons 
+% simultaneously.
+% 1) Use SVD and/or PCA to analyze the dataset.
+% 2) Estimate how many neurons are being recorded from the electrode and classify each observation.
+
+
 %% IMPORTING DATA
 
 SpikeData = importdata('NeuronData.mat');
