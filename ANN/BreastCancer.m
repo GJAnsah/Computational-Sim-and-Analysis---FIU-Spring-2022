@@ -42,3 +42,6 @@ trueTest = targets(:,testInd);
 % checking test accuracy
 testAccuracy = 1 - loss(Mdl,Data(:,testInd)',targets(:,testInd), ...
     "LossFun","classiferror")
+    
+%confusion matrix
+confusionchart(trueTest,netTest)
